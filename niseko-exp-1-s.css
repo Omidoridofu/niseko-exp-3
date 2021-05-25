@@ -1,0 +1,406 @@
+/*
+Theme Name: koala-wp
+Theme URL: programingbeginer.biz/
+Description: サンプルテーマ
+Version: 2.0
+Author: koala
+Authour URL: programingbeginer.biz/
+*/
+
+
+
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    margin:0;
+    padding:0;
+    background-color:#c9b0eb2c;
+    overflow-x: hidden;
+}
+.border{
+    margin:20px auto;
+}
+
+a,h1,h2,h3,h4,p{
+    text-decoration: none;
+    color:rgb(61, 61, 61);
+    letter-spacing: 1px;
+}
+
+@media screen and (max-width: 750px){
+    header{
+        width:100%;
+        border-bottom:2px solid #ECECEC;;
+        height:70px;
+        background-color:white;
+        
+    }
+    
+    
+    .niseko-top-logo{
+        height:40px;
+        margin-left:20px;
+        margin-top:18px;
+    }
+    #header-access{
+        display:none;
+    }
+    .header-btn-l{
+        display:none;
+    }
+    #nav-bar3{
+        display:none;
+    }
+    .header-tell-s{
+        vertical-align:top;
+        position:absolute;
+        top:22px;
+        right:17%;
+    }
+    .header-tell-s img{
+        width:12px;
+        padding-top:8px;
+    }
+    .header-tell-s h1{
+        font-size:12px;
+    }
+    /*  */
+    .header-btn-ct{
+        text-align:center;
+        margin-top:30px;
+    }
+    .btn-indi{
+        height:60px;
+        margin:0 auto 10px;
+        position:relative;
+        text-align:center;
+        padding:0 6px;
+        transition:0.4s;
+        border-radius:10px;
+        width:160px;
+    }
+    
+    .btn-indi:hover{
+        opacity:0.5;
+    }
+    .btn-indi a{
+        position:absolute;
+        width:100%;
+        height:100%;
+        top:0;
+        left:0;
+        z-index:99;
+        display:block;
+    }
+    
+    .btn-indi h1{
+        font-size:13px;
+        position:absolute;
+        transform:translate(-50%,-50%);
+        left:50%;
+        top:80%;
+        width:100%;
+        color:white;
+    }
+    
+    .line-btn{
+        background-color:#53B535;
+        border:1px solid #53B535;
+        
+        z-index:1px;
+        
+    }
+    
+    .btn-indi img{
+        height:40px;
+        width:40px;
+        z-index:1px;
+    }
+    .download-btn{
+        background-color:rgb(83, 83, 83);
+    }
+    /* メイン */
+    main{
+        width:100%;
+    }
+    /* ハンバーガー */
+    .header__inner {
+        margin: 0;
+    
+        width: 100%;
+      }
+      
+      
+      .sideMenu {
+        background-color: #fff;
+        height: 100vh;
+        overflow-y: auto;
+        padding-top: 56px;
+        position: fixed;
+        right: -50%;
+        transition: all 0.6s;
+        top: 0;
+        width: 50%;
+        z-index: 200;
+      }
+
+      .sideMenu hr{
+          width:60%;
+          margin:0 auto;
+      }
+      .sideMenu a{
+          height:55px;
+          font-size:18px;
+          width:100%;
+          display:block;
+          line-height:55px;
+          margin-bottom:-23px;
+      }
+      .hamburger {
+        cursor: pointer;
+        height: 56px;
+        position: fixed;
+        right: 10px;
+        top: -15px;
+        width: 56px;
+        z-index: 300;
+      }
+      .hamburger span {
+        background-color: #111;
+        height: 5px;
+        left: 11px;
+        position: absolute;
+        transition: all 0.6s;
+        width: 30px;
+      }
+      .hamburger__lineTop {
+        top: 40px;
+      }
+      .hamburger__lineCenter {
+        top: 49px;
+      }
+      .hamburger__lineBottom {
+        top: 58px;
+      }
+      .overlay {
+        background-color: #000;
+        cursor: pointer;
+        height: 100vh;
+        left: 0;
+        opacity: 0;
+        position: fixed;
+        top: 0;
+        transition: all 0.6s;
+        visibility: hidden;
+        width: 100vw;
+        z-index: 100;
+      }
+      /* メニューが開いた時のCSS */
+      .nav-open .sideMenu {
+        background-color: #fff;
+        right: 0;
+      }
+      .nav-open .hamburger__lineTop {
+        top: 40px;
+        transform: rotate(45deg);
+      }
+      .nav-open .hamburger__lineCenter {
+        left: 50%;
+        width: 0;
+      }
+      .nav-open .hamburger__lineBottom {
+        top: 40px;
+        transform: rotate(-45deg);
+      }
+      .nav-open .overlay {
+        opacity: 0.8;
+        visibility: visible;
+      }
+      section {
+        margin: 0 auto 200px;
+        text-align: center;
+        width: 80%;
+      }
+      
+      
+      .menu-img-a:hover{
+        opacity:0.3;
+        transition:0.5s;
+      }
+      .sideMenu a{
+        transition:0.5s;
+      }
+       /* 一つめ */
+    #exp-left-container{
+        width:100%;
+        margin:20px auto;
+        background-color:white;
+        padding-top:10px;
+        padding-bottom:10px;
+    }
+    #exp-person-ct{
+        width:95%;
+        margin:10px auto 30px;
+        filter: drop-shadow(0px 0px 0px #aaa);
+        border:1px solid rgba(128, 128, 128, 0.322);
+        padding:10px 0;
+        background-color:rgba(128, 128, 128, 0.067);
+    }
+    #exp-person-ct h1{
+        padding:0 20px;
+        font-size:16px;
+    }
+    #exp-person-ct p{
+        padding:0 20px;
+    }
+    .exp-question{
+        width:95%;
+        margin:0 auto;
+        background-color:#c9b0eb2a;
+        border:2px solid #c9b0eb94;
+        line-height:40px;
+        
+        
+    }
+    .exp-question p{
+        padding-left:10px;
+        width:90%;
+        margin:0 auto;
+    }
+    .exp-answer{
+        width:95%;
+        margin:10px auto 45px;
+        
+    }
+    .exp-answer p{
+        padding-left:10px;
+        font-weight:bold;
+    }
+    #tsuite{
+        text-align:center;
+        font-size:22px;
+        margin:20px 0;
+    }
+    #exp-top{
+        width:100%;
+        margin-top:20px;
+        padding-bottom:10px;
+        
+        border-radius:10px;
+        
+        
+        border-top:rgba(149, 35, 152, 0.813) 2px solid;
+        filter: drop-shadow(5px 5px 5px #aaa);
+        background-color:rgba(240, 206, 241, 0.479);
+    }
+    #exp-container{
+        width:95%;
+        margin:0 auto;
+        padding-bottom:20px;
+    }
+    #exp-top h1{
+        font-size:20px;
+        margin:10px ;
+    }
+    #exp-top p{
+        
+        margin:10px ;
+    }
+     /* footer */
+ footer{
+    width:100%;
+    
+    background-color:rgba(128, 128, 128, 0.259);
+    padding:20px 0;
+}
+.footer-ct{
+    width:95%;
+    height:100%;
+    margin:0 auto;
+}
+.footer-1{
+    width:85%;
+    padding-bottom:20px;
+    
+    padding-top:5px;
+    margin:0 auto;
+    border-bottom:2px solid rgba(0, 0, 0, 0.211);
+}
+.footer-1 h1{
+    color:rgb(91, 91, 91);
+    font-size:20px;
+    margin-bottom:20px;
+    text-align:center;
+}
+.footer-1 a{
+    line-height:30px;
+    font-size:15px;
+    color:rgb(91, 91, 91);
+    text-decoration: underline;
+}
+.footer-2{
+    width:85%;
+    
+    
+    padding:20px 0;
+    margin:0 auto;
+    
+    
+    text-align:center;
+}
+.footer-2 h1{
+    color:rgb(91, 91, 91);
+    font-size:20px;
+    margin-bottom:20px;
+    text-align:center;
+}
+.footer-1 a{
+    line-height:30px;
+    font-size:15px;
+    color:rgb(91, 91, 91);
+    text-decoration: underline;
+}
+.fab{
+    font-size:50px;
+}
+.footer-last{
+    text-align:center;
+    width:80%;
+    margin:0 auto;
+    font-size:14px;
+    color:rgb(91, 91, 91);
+    margin-top:50px;
+}
+.footer-3{
+    width:100%;
+    padding-top:20px;
+    
+    text-align:center;
+}
+.footer-3 img{
+    height:200px;
+}
+.footer-3 p{
+    font-size:22px;
+}
+    #exp-top-heading{
+        font-size:20px;
+    }
+    .exp-answer span{
+        font-weight:lighter;
+        font-size:14px;
+    }
+    
+    #back-to{
+        text-decoration: underline;
+    }
+    header a{
+        text-decoration: none;
+    }
+    #exp-left{
+        border-bottom:1px solid rgba(128, 128, 128, 0.293);
+        padding-bottom:10px;
+    }
+}
